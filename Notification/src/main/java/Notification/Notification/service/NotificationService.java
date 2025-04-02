@@ -71,7 +71,7 @@ public class NotificationService {
             notification.setNotificationStatus(NotificationStatus.SUCCEEDED);
         } catch (Exception e) {
             notification.setNotificationStatus(NotificationStatus.FAILED);
-            System.out.printf("There was an issue sending an email to %s due to %s./n",
+            System.out.printf("There was an issue sending an email to %s due to %s.%n",
                     userInfo.getContactInfo(), e.getMessage());
         }
 
